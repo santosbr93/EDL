@@ -19,7 +19,7 @@ Ruby é uma linguagem interpretada multiparadigma, ou seja, ela suporte mais de 
 Uma de suas características é que todas as suas variáveis são tradas como objetos
 Possui sintaxe simples inspirada por Eiffel e Ada e seus conceitos de orientação e objeto vieram do Smalltalk. 
 
-# Avaliação Comparativa
+# Comparação das linguagens
 Apesar de não ser tão rapidamente executada quando comparada a outras linguagens, Ruby compensa na agilidade com qual o programador consegue produzir programas funcionais com apenas algumas linhas de código.
 
 ## Exemplos de códigos
