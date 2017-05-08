@@ -111,6 +111,24 @@ def process_number(a,b,func):
 
 process_number(5,6,ad)
 ```
+# Legibilidade
+
+Ruby possui uma sintaxe simples de facil entendimento. Os tipos de suas variáveis não precisam ser definidos sendo facilmente modificados.
+
+Linguagem case sensitive, com alta ortogonalidade com poucas instruções de controle, facilitando a leitura e mudanças futuras, caso seja necessário, no código.
+
+Em ruby existem várias maneiras de resolver um mesmo problema, sendo possivel utilizar até mesmo a sintaxe do python para tal.
+
+# Redigibilidade
+
+Ruby possui uma preocupação maior com sua redigibilidade comparado a legibilidade.
+
+Comparando ao python, por exemplo, a linguagem possui mais métodos para listas, facilitando a escrita.
+
+Como tudo é visto como objeto, a abstração de dados e processos são evidentes. 
+
+A flexibilidade da linguagem ajuda com que os programadores não tenham problemas em se adaptar a mesma, possuindo também uma sinxtaxe bastante intuitiva.
+
 # Conclusão
 Como o próprio criado disse, Ruby foi desenvolvido para que os programadores pudesem se concentrar da diversão e na criatividade.
 
@@ -125,4 +143,5 @@ Seu uso é indicado quando há necessidade do tempo de desenvolvimento e maior d
 * http://www.curiousvilla.com/top-most-popular-computer-coding-languages-in-the-world-history/Ruby-Language.php
 * https://pt.wikipedia.org/wiki/Yukihiro_Matsumoto
 * http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+* https://groups.google.com/forum/#!topic/spc-programming-languages/qp3koOxitic
 
