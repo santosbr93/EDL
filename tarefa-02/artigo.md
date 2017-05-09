@@ -69,7 +69,7 @@ A flexibilidade da linguagem ajuda com que os programadores não tenham problema
 
 ### Declaração de variáveis
 
-Como dito anteriormente, em Ruby não precisamos definir os tipos das variáveis, alem disso, não precisamos pontuar o final de cada linha de código. Essas caracteristicas da lingugem ajudam ao programador a otimizar seu tempo.
+Como dito anteriormente, em Ruby não há a necessidade de definir os tipos das variáveis, além disso, não precisamos pontuar o final de cada linha de código. Essas caracteristicas da linguagem ajudam ao programador a otimizar seu tempo.
 
 Ruby
 
@@ -118,6 +118,8 @@ int main(int argc, char* argv[]){
 	}
 }
 ```
+A linguagem C, ao contrário do Ruby, não possui a implementação do for each, sendo necessário o uso de macros para a simular sua utilização, dificultando o entendimento do código.
+
 ### Imprimindo um array
 
 Ruby
@@ -140,6 +142,8 @@ int main()
   }
 }
 ```
+
+Como podemos ver acima, é muito simples imprimir um array comparado ao python que necessita utilizar um loop 'for' para tal.
 
 ### Função como variável
 
