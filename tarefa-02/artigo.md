@@ -63,9 +63,9 @@ Ruby possui uma preocupação maior com sua redigibilidade comparado a legibilid
 
 Comparando ao python, por exemplo, a linguagem possui mais métodos para listas, facilitando a escrita.
 
-Como tudo é visto como objeto, a abstração de dados e processos são evidentes. 
+Como tudo é visto como objeto, a abstração de dados e processos são mais claras. 
 
-A flexibilidade da linguagem ajuda com que os programadores não tenham problemas em se adaptar a mesma, possuindo também uma sintaxe bastante intuitiva.
+A flexibilidade da linguagem ajuda com que os programadores não tenham problemas em se adaptar a mesma, possuindo também uma sintaxe intuitiva, porém, não recomedanda para inicantes em programação por conta de suas notações únicas, podendo causar certas dificuldades no início.
 
 ### Declaração de variáveis
 
