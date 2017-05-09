@@ -22,6 +22,64 @@ Possui sintaxe simples inspirada por Eiffel e Ada e seus conceitos de orientaç�
 # Comparação das linguagens
 Apesar de não ser tão rapidamente executada quando comparada a outras linguagens, Ruby compensa na agilidade com qual o programador consegue produzir programas funcionais com apenas algumas linhas de código.
 
+## Legibilidade
+
+Ruby possui uma sintaxe simples de facil entendimento. Os tipos de suas variáveis não precisam ser definidos sendo facilmente modificados.
+
+Possui linguagem case sensitive, com alta ortogonalidade com poucas instruções de controle, facilitando a leitura e mudanças futuras, caso seja necessário, no código.
+
+Em ruby existem várias maneiras de resolver um mesmo problema, sendo possivel utilizar até mesmo a sintaxe do python para tal.
+
+### Hello world
+
+Abaixo podemos ver dois codigos que irão exemplicar a facilidade de leitura do Ruby.
+
+Ruby
+
+```
+print “Hello World”
+```
+
+Java
+
+```
+import java.io.*;
+
+    public class Hello
+{
+    	public static void main ( String[] args){
+
+        	System.out.println ("Hello Ruby!\n");
+        }
+}
+```
+
+## Redigibilidade
+
+Ruby possui uma preocupação maior com sua redigibilidade comparado a legibilidade.
+
+Comparando ao python, por exemplo, a linguagem possui mais métodos para listas, facilitando a escrita.
+
+Como tudo é visto como objeto, a abstração de dados e processos são evidentes. 
+
+A flexibilidade da linguagem ajuda com que os programadores não tenham problemas em se adaptar a mesma, possuindo também uma sintaxe bastante intuitiva.
+
+### Declaração de variáveis
+
+Como dito anteriormente, em Ruby não precisamos definir os tipos das variáveis, alem disso, não precisamos pontuar o final de cada linha de código. Essas caracteristicas da lingugem ajudam ao programador a otimizar seu tempo.
+
+Ruby
+
+```
+numero = 100 
+```
+
+C++
+
+```
+int numero = 100;
+```
+
 ## Exemplos de códigos
 
 ### Uso do for each
@@ -111,23 +169,6 @@ def process_number(a,b,func):
 
 process_number(5,6,ad)
 ```
-# Legibilidade
-
-Ruby possui uma sintaxe simples de facil entendimento. Os tipos de suas variáveis não precisam ser definidos sendo facilmente modificados.
-
-Linguagem case sensitive, com alta ortogonalidade com poucas instruções de controle, facilitando a leitura e mudanças futuras, caso seja necessário, no código.
-
-Em ruby existem várias maneiras de resolver um mesmo problema, sendo possivel utilizar até mesmo a sintaxe do python para tal.
-
-# Redigibilidade
-
-Ruby possui uma preocupação maior com sua redigibilidade comparado a legibilidade.
-
-Comparando ao python, por exemplo, a linguagem possui mais métodos para listas, facilitando a escrita.
-
-Como tudo é visto como objeto, a abstração de dados e processos são evidentes. 
-
-A flexibilidade da linguagem ajuda com que os programadores não tenham problemas em se adaptar a mesma, possuindo também uma sinxtaxe bastante intuitiva.
 
 # Conclusão
 Como o próprio criado disse, Ruby foi desenvolvido para que os programadores pudesem se concentrar da diversão e na criatividade.
