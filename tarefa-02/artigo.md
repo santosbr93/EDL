@@ -16,11 +16,14 @@ Em 2005, surgiu um novo framework escrito na linguagem, o chamado Ruby on Rails.
 # Classificação
 Ruby é uma linguagem interpretada multiparadigma, ou seja, ela suporte mais de um paradigma de programação, além disso possui tipagem forte e dinâmica. 
 
-Uma de suas características é que todas as suas variáveis são tradas como objetos
 Possui sintaxe simples inspirada por Eiffel e Ada e seus conceitos de orientação e objeto vieram do Smalltalk. 
 
 # Comparação das linguagens
 Apesar de não ser tão rapidamente executada quando comparada a outras linguagens, Ruby compensa na agilidade com qual o programador consegue produzir programas funcionais com apenas algumas linhas de código.
+
+Uma de suas características é que todas as suas variáveis são tradas como objetos, diferentemente de outras linguagens como o Java.
+
+Em realação a Python, apesar de muitas similiaridades, as linguagens possuem algumas diferenças, como o uso de elsif(Ruby) e elif(Python) e na avaliação de retorno "true" ou "false". Em ruby apenas "false" ou "nil" retornam um valor falso, todo o resto e verdadeiro, incluindo o "0".
 
 ## Legibilidade
 
