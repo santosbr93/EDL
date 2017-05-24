@@ -18,6 +18,10 @@ galinha2 = {x = 675, y = 565, w = 30, h = 30}
 pontos=0
 pontos2=0
 tempo = 0
+--Nome: variável tempo
+--Propriedade: endereço
+--Binding time: compilação
+--Explicação: "Tempo" é uma variavel global, protanto, a alocação de memória é realizada em tempo de compilação.
 segundos = 0
 gameOver = false
 
@@ -25,6 +29,11 @@ function love.load()
 	love.window.setMode(largura,altura)
 	love.graphics.setBackgroundColor(168,168,168)
 	carro1_d = love.graphics.newImage("spriteCarro1_d.png")
+	--Nome: variável "carro1_d"
+	--Propriedade: endereço
+	--Binding time: execução
+	--Explicação: A variável "tempo" so será amarrada a um endereço de memória quandoo jogo for carregado, sendo assim, só poderemos determinar o endereço em tempo de execução.
+	
 	carro1_e = love.graphics.newImage("spriteCarro1_e.png")
 	carro2_d = love.graphics.newImage("spriteCarro2_d.png")
 	carro2_e = love.graphics.newImage("spriteCarro2_e.png")
@@ -57,7 +66,12 @@ function andarCarro_d(objeto,velocidade)
 
 		elseif(objeto.x == largura) then
 			objeto.x = 0
-		end		
+		end
+	
+		--Nome: palavra reservada "If/Elseif then"
+		--Propriedade: sintaxe
+		--Binding time: design da linguagem
+		--Explicação: A a forma de escrita e utilização do "if/elseif then" foi definida quando a linguagem foi criada. Por isso e amarrada em tempo de design.
 end	
 
 function andarCarro_e(objeto,velocidade)
@@ -131,10 +145,13 @@ end
 function love.update(dt)
 	
 	segundos = segundos + dt
-
+	
+	--Nome: Operador "+"
+	--Propriedade: sintaxe
+	--Binding time: design da linguagem
+	--Explicação: O operador "+" especifica a soma de dois valores ou objetos e isso foi definido em tempo de design da linguagem.
+	
 	tempo = math.floor(segundos)
-
-	--if(ativo==true and tempo<=10) then 
 
 		andarCarro_d(carro1,1.5)
 		andarCarro_d(carro2,1)
@@ -259,8 +276,7 @@ function love.update(dt)
 	        galinha2.x = 675
 	        galinha2.y = 565
 	        love.audio.play(somGalinha)
-	    end
-   -- end	
+	    end	
 end
 
 function love.draw()
@@ -274,15 +290,15 @@ function love.draw()
     	if(pontos>pontos2) then
     		love.graphics.setColor(255,255,255)
     		love.graphics.print("Jogador 1 e o vencedor",320,350,0,2,2)
-    		--love.timer.sleep(1)
+    	
     	elseif(pontos<pontos2) then
     		love.graphics.setColor(255,255,255)
     		love.graphics.print("Jogador 2 e o vencedor",320,350,0,2,2)
-    		--love.timer.sleep(1)
+    		
     	elseif(pontos==pontos2) then
     		love.graphics.setColor(255,255,255)
     		love.graphics.print("Empate!!",400,350,0,2,2)	
-    		--love.timer.sleep(1)
+    		
     	end	
 
 	elseif (tempo<70) then
