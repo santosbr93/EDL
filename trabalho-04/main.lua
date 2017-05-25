@@ -29,11 +29,6 @@ function love.load()
 	love.window.setMode(largura,altura)
 	love.graphics.setBackgroundColor(168,168,168)
 	carro1_d = love.graphics.newImage("spriteCarro1_d.png")
-	--Nome: variável "carro1_d"
-	--Propriedade: endereço
-	--Binding time: execução
-	--Explicação: A variável "tempo" so será amarrada a um endereço de memória quandoo jogo for carregado, sendo assim, só poderemos determinar o endereço em tempo de execução.
-	
 	carro1_e = love.graphics.newImage("spriteCarro1_e.png")
 	carro2_d = love.graphics.newImage("spriteCarro2_d.png")
 	carro2_e = love.graphics.newImage("spriteCarro2_e.png")
@@ -41,6 +36,11 @@ function love.load()
 	somPonto = love.audio.newSource("score.wav", "stream")
 	somGalinha = love.audio.newSource("galinha.wav", "stream")
 end
+
+	--Nome: Funtion/END
+	--Propriedade: sintaxe
+	--Binding time: design da linguagem
+	--Explicação: As palavras funtion/END foram definidas em tempo de design como reservadas.
 
 function desenhaCarro()
 
@@ -146,10 +146,10 @@ function love.update(dt)
 	
 	segundos = segundos + dt
 	
-	--Nome: Operador "+"
-	--Propriedade: sintaxe
-	--Binding time: design da linguagem
-	--Explicação: O operador "+" especifica a soma de dois valores ou objetos e isso foi definido em tempo de design da linguagem.
+	--Nome: variável segundos
+	--Propriedade: endereço
+	--Binding time: execução
+	--Explicação: O valor da variável segundos será alterado em tempo de execução.
 	
 	tempo = math.floor(segundos)
 
