@@ -1,4 +1,8 @@
 largura = 900
+--Nome: variável largura
+--Propriedade: endereço
+--Binding time: compilação
+--Explicação: "largura" é uma variavel global, e seu valor foi definido em tempo de compilação.
 altura = 600
 carro1 = {x= 0 , y = 515, w= 50, h = 20}
 carroAzul1 = {x= -250 , y = 515, w= 50, h = 20}
@@ -18,10 +22,6 @@ galinha2 = {x = 675, y = 565, w = 30, h = 30}
 pontos=0
 pontos2=0
 tempo = 0
---Nome: variável tempo
---Propriedade: endereço
---Binding time: compilação
---Explicação: "Tempo" é uma variavel global, protanto, a alocação de memória é realizada em tempo de compilação.
 segundos = 0
 gameOver = false
 
@@ -29,6 +29,10 @@ function love.load()
 	love.window.setMode(largura,altura)
 	love.graphics.setBackgroundColor(168,168,168)
 	carro1_d = love.graphics.newImage("spriteCarro1_d.png")
+	--Nome: variável carro1_d
+	--Propriedade: endereço
+	--Binding time: compilação
+	--Explicação: A variável esta recebendo em tempo de compilação uma função para adição de uma imagem.
 	carro1_e = love.graphics.newImage("spriteCarro1_e.png")
 	carro2_d = love.graphics.newImage("spriteCarro2_d.png")
 	carro2_e = love.graphics.newImage("spriteCarro2_e.png")
@@ -37,7 +41,7 @@ function love.load()
 	somGalinha = love.audio.newSource("galinha.wav", "stream")
 end
 
-	--Nome: Funtion/END
+	--Nome: Function/END
 	--Propriedade: sintaxe
 	--Binding time: design da linguagem
 	--Explicação: As palavras funtion/END foram definidas em tempo de design como reservadas.
@@ -128,6 +132,10 @@ function andarGalinha()
 
  			love.audio.play(somPonto)
  			pontos2 = pontos2 + 1
+			--Nome: variável pontos2
+			--Propriedade: endereço
+			--Binding time: execução
+			--Explicação: o valor da variável pontos2 vai ser atualizado durante o tempo de execução.
  			galinha2.y=565 
  		end	
 
