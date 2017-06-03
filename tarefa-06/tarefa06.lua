@@ -281,7 +281,10 @@ function love.draw()
     	love.graphics.print("FIM de JOGO",350,300,0,3,3)
     	if(pontos>pontos2) then
     		love.graphics.setColor(255,255,255)
-    		love.graphics.print("Jogador 1 e o vencedor",320,350,0,2,2)
+			
+    		jogador={"Brayan",24}
+    		love.graphics.print("O jogador "..jogador[1].." e o vencedor",320,350,0,2,2)
+		--Exemplo de Tupla
     	
     	elseif(pontos<pontos2) then
     		love.graphics.setColor(255,255,255)
