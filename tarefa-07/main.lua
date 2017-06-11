@@ -22,6 +22,11 @@ segundos = 0
 segundos2 = 0
 gameOver = false
 ovos={}
+--Escopo: Varíavel ovos é global
+--Tempo de vida: até que haja colisão entre os objetos, sendo zerado após isso.
+--Alocação: alocação é realizada ao iniciar o jogo e e aumentada sempre que um objeto é criado.
+--Desalocação: objetos são desalocados ao colidirem.
+
 ovos2={}
 posicao=0
 ovo=0
@@ -30,6 +35,10 @@ ovo2=0
 function love.keypressed(key)
   if key == "space" then
     ovos[#ovos+1] = {x=galinha.x, y=galinha.y, w=galinha.w,h=galinha.h}
+--Escopo: objeto criado é global
+--Tempo de vida: objetos irão durar no array até que haja alguma colisão com outro objeto.
+--Alocação: a alocação do objeto no array e realizada na função acima.
+--Desalocação: quando ocorrer colisão.
 
   elseif key == "up" then
     	ovos2[#ovos2+1] = {x=galinha2.x, y=galinha2.y, w=galinha2.w,h=galinha2.h}
