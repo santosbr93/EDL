@@ -36,19 +36,19 @@ nome (nm,_,_) = nm              -- as notas são ignoradas
 -- Usando as definições acima, forneça a implementação para os três trechos marcados com <...>:
 
 turma: Turma
-turma = [ ("Joao",7,4), ("Maria",10,8), ... ]       -- 50 alunos
+turma = [ ("Joao",7,4), ("Maria",10,8), ("Brayan",10,7),("Erika",8,9),("Ricardo",5,6) ]       -- 50 alunos
 
 -- a) LISTA COM AS MÉDIAS DOS ALUNOS DE "turma" ([5.5, 9, ...])
 medias: List Float
-medias = ...
+medias = List.map media turma
 
 -- b) LISTA COM OS NOMES DOS ALUNOS DE "turma" APROVADOS (["Maria", ...])
-aprovados: List String
-aprovados = ...
+--aprovados: List String
+--aprovados = ...
 
 -- c) MÉDIA FINAL DOS ALUNOS DE "turma" (média de todas as médias)
-total: Float
-total = ...
+--total: Float
+--total = ...
 
 -- É permitido usar funções auxiliares, mas não é necessário.
 -- (As soluções são pequenas.)
