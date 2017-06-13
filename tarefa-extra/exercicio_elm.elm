@@ -53,4 +53,4 @@ medias = List.map media turma
 -- É permitido usar funções auxiliares, mas não é necessário.
 -- (As soluções são pequenas.)
 
-main = text (toString turma)
+main = text (toString medias)
