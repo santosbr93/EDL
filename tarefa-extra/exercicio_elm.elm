@@ -20,6 +20,9 @@ nome (nm,_,_) = nm              -- as notas são ignoradas
 somaMedia: Float -> Float -> Float
 somaMedia num1 num2 = (num1+num2)
 
+acimaMedia: Aluno -> Bool
+acimaMedia (_,n1,n2) = (((n1+n2)/2)>=7)
+
 -- Por fim, considere as assinaturas para as funções map, filter, e fold a seguir:
 
 --List.map: (a->b) -> (List a) -> (List b)
@@ -46,15 +49,18 @@ medias: List Float
 medias = List.map media turma
 
 -- b) LISTA COM OS NOMES DOS ALUNOS DE "turma" APROVADOS (["Maria", ...])
-soma: Float
-soma = (List.foldl somaMedia 0 medias)/5
+mediaSete = List.filter acimaMedia turma
+
+aprovados: List String
+aprovados = List.map nome mediaSete
 
 -- c) MÉDIA FINAL DOS ALUNOS DE "turma" (média de todas as médias)
---total: Float
---total = ...
+total: Float
+total = (List.foldl somaMedia 0 medias)/5
 
 -- É permitido usar funções auxiliares, mas não é necessário.
 -- (As soluções são pequenas.)
 
 main = text (toString medias)
---main = text (toString soma)
+--main = text (toString aprovados)
+--main = text (toString total)
