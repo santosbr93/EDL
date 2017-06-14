@@ -58,6 +58,18 @@ aprovados = List.map nome mediaSete
 total: Float
 total = (List.foldl somaMedia 0 medias)/5
 
+-- d) LISTA DE ALUNOS QUE GABARITARAM A P1 ([("Maria",10,8), ...])
+turma_dez_p1: Turma
+turma_dez_p1 = ...
+
+-- e) LISTA COM OS NOMES E MEDIAS DOS ALUNOS APROVADOS ([("Maria",9), ...])
+aprovados2: List (String,Float)
+aprovados2 = ...
+
+-- f) LISTA COM TODAS AS NOTAS DE TODAS AS PROVAS ([7,4,10,8,...])
+notas: List Float
+notas = ...
+
 -- É permitido usar funções auxiliares, mas não é necessário.
 -- (As soluções são pequenas.)
 
