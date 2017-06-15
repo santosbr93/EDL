@@ -26,8 +26,11 @@ acimaMedia (_,n1,n2) = (((n1+n2)/2)>=7)
 gabaritou: Aluno -> Bool
 gabaritou (nm,n1,n2) = n1==10
 
-notas1: Aluno -> Float
-notas1 (_,n1,n2) = n1
+nomeNota: Aluno -> (String,Float)
+nomeNota (nm,n1,n2) = (nm,((n1+n2)/2))
+
+notas1: Aluno -> (Float,Float)
+notas1 (_,n1,n2) = (n1,n2)
 
 notas2: Aluno -> Float
 notas2 (_,n1,n2) = n2
@@ -72,13 +75,13 @@ total = (List.foldl somaMedia 0 medias)/5
 turma_dez_p1: Turma
 turma_dez_p1 = List.filter gabaritou turma
 
--- e) LISTA COM OS NOMES E MEDIAS DOS ALUNOS APROVADOS ([("Maria",9), ...])
---aprovados2: List (String,Float)
---aprovados2 = 
+--e) LISTA COM OS NOMES E MEDIAS DOS ALUNOS APROVADOS ([("Maria",9), ...])
+aprovados2: List (String,Float)
+aprovados2 = List.map nomeNota(List.filter acimaMedia turma)
 
 -- f) LISTA COM TODAS AS NOTAS DE TODAS AS PROVAS ([7,4,10,8,...])
---notas: List Float
---notas = List.map notas1 turma
+notas: List (Float,Float)
+notas = List.map notas1 turma
 
 -- É permitido usar funções auxiliares, mas não é necessário.
 -- (As soluções são pequenas.)
@@ -87,4 +90,5 @@ turma_dez_p1 = List.filter gabaritou turma
 --main = text (toString aprovados)
 --main = text (toString total)
 --main = text (toString turma_dez_p1)
-main = text (toString aprovados2)
+--main = text (toString aprovados2)
+main = text (toString notas)
